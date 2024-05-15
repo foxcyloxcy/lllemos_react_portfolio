@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Heebo", sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+
+#sun {
+  /* Positions the top-left corner of the image to be *
+    /* in the middle of the box */
+  height: 200px;
+  width: 200px;
+  background-color: #fae20a;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-radius: 50%;
+  box-shadow: 0 0 84px orange;
+  z-index: 1;
+}
+
+#moon {
+  margin-top: -6px;
+  margin-left: -6px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.app-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homepage-container{
+  z-index: 2;
+}
