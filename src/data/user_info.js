@@ -1,20 +1,20 @@
 const info = {
     main: {
-        name: "Daniel Shan Balico",
+        name: "Lucky Llemos",
         description: "I am a software engineer with expertise in full-stack web development. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards.",
         role: "Software Engineer",
         photo: "../photo.jpg",
-        email: "danielshan.balico@gmail.com",
+        email: "luckyllemos0909@gmail.com",
         tracking_id: "G-BNTTBGHXSC"
     },
 
     socials: {
-        twitter: "https://twitter.com/dsbalico",
-		github: "https://github.com/dsbalico",
-		linkedin: "https://linkedin.com/in/daniel-shan-balico",
-		instagram: "https://instagram.com/dsbalico",
-		facebook: "https://facebook.com/dsbalico",
-        telegram: "https://telegram.me/dsbalico"
+		github: "https://github.com/foxcyloxcy",
+		linkedin: "https://www.linkedin.com/in/lucky-llemos-866286200/",
+		facebook: "https://www.facebook.com/lucky.llemos.1",
+        viber: "+63917-162-6566",
+        stackOverFlow: "https://stackoverflow.com/users/14865943/foxcyloxcy",
+        resumeOrCv: "lllemos_cv_2024-16-05.pdf",
     },
 
     skills: {
@@ -68,25 +68,25 @@ const info = {
 
     education: [
         {
-            school: "Technological University of the Philippines",
-            degree: "BS in Computer Science",
-            year: "2020 - Present",
-            image: "tup.png"
+            school: "Zuitt Coding Bootcamp",
+            degree: "Full Stack Web Development Course",
+            year: "2020",
+            image: "zuitt.png"
         },
         {
-            school: "STI College",
-            degree: "ICT in Mobile App and Web Development",
-            year: "2018 - 2020",
-            image: "sti.png"
+            school: "Palawan Technological College Inc.",
+            degree: "Bachelor of Science in Information Technology",
+            year: "2012 - 2016",
+            image: "ptci.png"
         },
     ],
 
     contact: {
         title: "Let's Get in Touch: Ways to Connect with Me",
-        description: "Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at danielshan.balico@gmail.com. I make an effort to respond to all messages within 24 hours, although it may take me longer during busy periods. Finally, if you prefer to connect on social media, you can connect with me using the social media links below.",
+        description: "Thank you for your interest in getting in touch with me. I welcome your feedback, questions, and suggestions. If you have a specific question or comment, please feel free to email me directly at luckyllemos0909@gmail.com. I make an effort to respond to all messages within 24 hours, although it may take me longer during busy periods. Finally, if you prefer to connect on social media, you can connect with me using the social media links below.",
     },
 
-    footer: "© 2024 Daniel Shan Balico. All Rights Reserved"
+    footer: "Lucky Llemos Portfolio"
 }
 
 export default info

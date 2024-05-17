@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaTelegramPlane, FaArrowCircleUp   } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaViber, FaArrowCircleUp, FaStackOverflow, FaFileDownload   } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaSquareXTwitter, FaLinkedin  } from "react-icons/fa6";
 import Project from "../components/Project";
@@ -134,17 +134,22 @@ function Homepage() {
                             <FaFacebook className="self-center text-lg" />
                             <span className="self-center">Follow on Facebook</span>
                         </a>
-                        <a href={user_info.socials.twitter} className="flex gap-4 hover:text-gray-700 transition-all duration-300 mt-4">
+                        {/* <a href={user_info.socials.twitter} className="flex gap-4 hover:text-gray-700 transition-all duration-300 mt-4">
                             <FaSquareXTwitter className="self-center text-lg" />
                             <span className="self-center">Follow on Twitter</span>
-                        </a>
-                        <a href={user_info.socials.instagram} className="flex gap-4 hover:text-gray-700 transition-all duration-300 mt-4">
+                        </a> */}
+                        {/* <a href={user_info.socials.instagram} className="flex gap-4 hover:text-gray-700 transition-all duration-300 mt-4">
                             <FaInstagram className="self-center text-lg" />
                             <span className="self-center">Follow on Instagram</span>
-                        </a>
+                        </a> */}
                         <a href={user_info.socials.linkedin} className="flex gap-4 hover:text-gray-700 transition-all duration-300 mt-4">
                             <FaLinkedin className="self-center text-lg" />
                             <span className="self-center">Follow on Linkedin</span>
+                        </a>
+                        
+                        <a href={user_info.socials.stackOverFlow} className="flex gap-4 hover:text-gray-700 transition-all duration-300 mt-4">
+                            <FaStackOverflow className="self-center text-lg" />
+                            <span className="self-center">Stack Overflow Profile</span>
                         </a>
                     </div>
 
@@ -155,17 +160,26 @@ function Homepage() {
                         <span>{ user_info.main.email }</span>
                     </a>
 
-                    <a href={user_info.socials.telegram} className="flex mt-6 gap-4 hover:text-gray-700 transition-all duration-30">
-                        <FaTelegramPlane   className="self-center text-lg" />
+                    {/* <a href={user_info.socials.telegram} className="flex mt-6 gap-4 hover:text-gray-700 transition-all duration-30">
+                        <FaTelegramPlane className="self-center text-lg" />
                         <span>Message on Telegram</span>
-                    </a>
+                    </a> */}
+                    <label href={user_info.socials.viber} className="flex mt-6 gap-4">
+                        <FaViber className="self-center text-lg" />
+                        <span>{user_info.socials.viber}</span>
+                    </label>
+
+                    <a href={user_info.socials.resumeOrCv} className="flex gap-4 hover:text-gray-700 transition-all duration-300 mt-4" download>
+                            <FaFileDownload className="self-center text-lg" />
+                            <span className="self-center">Download my Resume/CV</span>
+                        </a>
                 </div>
 
                 <hr className="mt-12 border border-gray-300 dark:border-gray-700" />
                 
                 {/* Footer */}
                 <footer className="p-4 text-center md:flex justify-between">
-                    <GitHubButton className="self-center" href="https://github.com/dsbalico/dsfolio" data-color-scheme={theme} data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star dsbalico/dsfolio on GitHub">Star on Github</GitHubButton>
+                    <GitHubButton className="self-center" href="https://github.com/foxcyloxcy" data-color-scheme={theme} data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star foxcyloxcy/lllemos_react_portfolio on GitHub">Star on Github</GitHubButton>
                     <p className=" self-center mt-2 md:mt-0 text-sm text-center font-light">{user_info.footer}</p>
                     <button onClick={() => scrollToTop()} className="self-center mt-2 md:mt-0 mx-auto md:mx-0 text-sm font-light flex gap-2"><FaArrowCircleUp className="self-center" /> Go back to top</button>
                 </footer>
