@@ -62,14 +62,17 @@ function Homepage() {
                 </div>
 
                 {/* Projects */}
-                <div id="projects" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 md:px-16">
-                    {
-                        user_info.projects.map((project, index) => {
-                            return (
-                                <Project key={index} theme={theme} title={project.title} description={project.description} technologies={project.technologies} github={project.github} link={project.link} />
-                            )
-                        })
-                    }
+                <div className="border border-solid border dark:border-gray-500 p-4 rounded-xl">
+                    <h1>Previous projects:</h1>
+                    <div id="projects" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 md:px-16">
+                        {
+                            user_info.projects.map((project, index) => {
+                                return (
+                                    <Project key={index} theme={theme} title={project.title} description={project.description} technologies={project.technologies} github={project.github} link={project.link} />
+                                )
+                            })
+                        }
+                    </div>
                 </div>
 
                 {/* Skills & Education */}
@@ -77,7 +80,7 @@ function Homepage() {
                     {/* Skills */}
                     <div>
                         <div className="p-6 hover:bg-gray-200/70 backdrop-filter backdrop-blur-sm transition-all duration-300 md:rounded-xl">
-                            <h4 className="text-lg font-medium">Programming Languages</h4>
+                            <h4 className="text-lg font-medium">Programming Database and Languages</h4>
                             <p className="leading-7 mt-2 text-base font-light">{user_info.skills.languages.description}</p>
                             <img className="w-48 mt-4" src={user_info.skills.languages.image + theme} />
                         </div>
@@ -153,7 +156,7 @@ function Homepage() {
                         </a>
                     </div>
 
-                    <hr className="mt-6 w-72 border" />
+                    <hr className="mt-6 w-72 border border-gray-300 dark:border-gray-700" />
 
                     <a href={`mailto:${user_info.main.email}`} className="flex mt-6 gap-4 hover:text-gray-700 transition-all duration-30">
                         <MdEmail className="self-center text-lg" />

@@ -5,13 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./src/**/*.js,ts,jsx,tsx",
     "./src/components/**.js,ts,jsx,tsx",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
       backdropFilter: ['hover', 'focus'],
     },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
   safelist: [
     'bg-slate-800',
     'bg-sky-300',

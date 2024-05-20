@@ -19,51 +19,51 @@ const info = {
 
     skills: {
         languages: {
-            description: "I possess proficient expertise in a diverse range of programming languages, including C, C++, C#, Python, TypeScript, and JavaScript.",
-            image: "https://skillicons.dev/icons?i=c,cpp,cs,py,typescript,javascript&perline=6&theme="
+            description: "I possess proficient expertise in a diverse range of programming languages, including C++, TypeScript, PHP, JavaScript, MongoDB and MySQL.",
+            image: "https://skillicons.dev/icons?i=cpp,typescript,php,javascript,mongodb,mysql&perline=6&theme="
         },
         frameworks: {
-            description: "Experienced in a versatile tech stack, including React, Express.js, Node.js, Flask, Tailwind CSS, and Tensorflow.",
-            image: "https://skillicons.dev/icons?i=react,express,nodejs,flask,tailwind,tensorflow&perline=6&theme="
+            description: "Experienced in a versatile tech stack, including React.js, Next.js, Express.js, Node.js, Tailwind CSS, Vue.js and Vuetify",
+            image: "https://skillicons.dev/icons?i=react,next,express,nodejs,tailwind,vue,vuetify&perline=7&theme="
         },
         tools: {
-            description: "I am well-versed in utilizing various tools and platforms to enhance the development process, including Git, Github, Netlify, Vercel, Firebase, and Postman.",
-            image: "https://skillicons.dev/icons?i=git,github,netlify,vercel,firebase,postman&perline=6&theme="
+            description: "I am well-versed in utilizing various tools and platforms to enhance the development process, including Git, Github, Gitlab, StackOverflow, Heroku and Postman.",
+            image: "https://skillicons.dev/icons?i=git,github,gitlab,stackoverflow,heroku,postman&perline=6&theme="
         },
     },
 
     projects: [
         {
-			title: "Draw & Classify",
-			description: "Draw & Classify is a web application designed to test my machine learning model, which classifies drawn letters, digits, or shapes.",
-			technologies: "https://skillicons.dev/icons?i=react,tailwindcss,tensorflow,0,0&perline=5&theme=",
-			github: "https://github.com/dsbalico/letter-digit-shape-classification",
-            link: "https://letterdigitshape-classification.netlify.app/"
+			title: "McLaud Technology",
+			description: "McLaud Technology is a company that specializes in various printers, scanners, copiers, fax machines, and other office equipment. I was hired as a shopify web developer to build new features and maintain existing functionalities that allows users to manage their product inventory and customer orders.",
+			technologies: "mclaud_tech.png",
+			// github: "https://github.com/dsbalico/letter-digit-shape-classification",
+            link: "https://mclaudtechnology.com/"
 		},
 
 		{
-			title: "Chatroom",
-			description: "Chatroom is a simple online chatting web application where you can create chat rooms and have a fun conversation with a group of people.",
-			technologies: "https://skillicons.dev/icons?i=react,tailwindcss,firebase,0,0&perline=5&theme=",
-			github: "https://github.com/dsbalico/chatroom",
-            link: "https://thechatroom.netlify.app/"
+			title: "TalentSage",
+			description: "TalentSage is a company that specializes in personality test surveys and reports. I was hired as a part of development team. We built this complex web application from scratch, it allows users to have multiple roles, multiple organizations, create and manage surveys(sample surveys are: Big 5 Personality Test  and 360 Personality Test ) and reports for the respective surveys.",
+			technologies: "app_logo2.png",
+			// github: "https://github.com/dsbalico/chatroom",
+            link: "https://www.talentsage.com/"
 		},
 
-		{
-			title: "Sudoku Solver",
-			description: "Sudoku Solver is a web application that can generate or solve sudoku problems using simulated annealing, an optimization algorithm.",
-			technologies: "https://skillicons.dev/icons?i=react,tailwindcss,ts,0,0&perline=5&theme=",
-			github: "https://github.com/dsbalico/sudoku-solver-using-simulated-annealing",
-            link: "https://sudoku-solver-sa.netlify.app/"
-		},
+		// {
+		// 	title: "Sudoku Solver",
+		// 	description: "Sudoku Solver is a web application that can generate or solve sudoku problems using simulated annealing, an optimization algorithm.",
+		// 	technologies: "https://skillicons.dev/icons?i=react,tailwindcss,ts,0,0&perline=5&theme=",
+		// 	github: "https://github.com/dsbalico/sudoku-solver-using-simulated-annealing",
+        //     link: "https://sudoku-solver-sa.netlify.app/"
+		// },
 
-		{
-			title: "Probability Pick",
-			description: "Probability Pick is a PCSO Lotto Number Generator that calculates the likelihood of selecting winning numbers based on historical draw data.",
-			technologies: "https://skillicons.dev/icons?i=react,tailwindcss,flask,0,0&perline=5&theme=",
-			github: "https://github.com/dsbalico/pcso-lotto-number-generator",
-            link: "https://probability-pick.netlify.app/"
-		},
+		// {
+		// 	title: "Probability Pick",
+		// 	description: "Probability Pick is a PCSO Lotto Number Generator that calculates the likelihood of selecting winning numbers based on historical draw data.",
+		// 	technologies: "https://skillicons.dev/icons?i=react,tailwindcss,flask,0,0&perline=5&theme=",
+		// 	github: "https://github.com/dsbalico/pcso-lotto-number-generator",
+        //     link: "https://probability-pick.netlify.app/"
+		// },
     ],
 
     education: [
