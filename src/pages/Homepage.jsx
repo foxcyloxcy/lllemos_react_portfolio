@@ -182,7 +182,7 @@ function Homepage() {
                 
                 {/* Footer */}
                 <footer className="p-4 text-center md:flex justify-between">
-                    <GitHubButton className="self-center" href="https://github.com/foxcyloxcy" data-color-scheme={theme} data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star foxcyloxcy/lllemos_react_portfolio on GitHub">Star on Github</GitHubButton>
+                    <GitHubButton className="self-center" href="https://github.com/foxcyloxcy" data-color-scheme={theme} data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star foxcyloxcy/lllemos-react-portfolio on GitHub">Star on Github</GitHubButton>
                     <p className=" self-center mt-2 md:mt-0 text-sm text-center font-light">{user_info.footer}</p>
                     <button onClick={() => scrollToTop()} className="self-center mt-2 md:mt-0 mx-auto md:mx-0 text-sm font-light flex gap-2"><FaArrowCircleUp className="self-center" /> Go back to top</button>
                 </footer>
