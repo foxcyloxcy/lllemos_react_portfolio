@@ -31,7 +31,7 @@ function App() {
 	useEffect(() => {
 	  // Select the body element
 	  const body = document.body;
-	  console.log(body.classList[0])
+	//   console.log(body.classList[0])
 	  // Update the class based on whether it's night time
 	  if (isNight) {
 		body.classList.add('bg-slate-800');
