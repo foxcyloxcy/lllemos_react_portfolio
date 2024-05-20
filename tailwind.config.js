@@ -7,7 +7,9 @@ export default {
     "./src/components/**.js,ts,jsx,tsx",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backdropFilter: ['hover', 'focus'],
+    },
   },
   plugins: [],
   safelist: [

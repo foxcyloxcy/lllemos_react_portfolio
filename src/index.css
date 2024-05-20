@@ -47,3 +47,13 @@
 .homepage-container{
   z-index: 2;
 }
+
+::-webkit-scrollbar-thumb {
+  background: #4577af;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: #acb7e1;
+}
