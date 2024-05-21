@@ -18,7 +18,7 @@ function App() {
 	const nightHoverClass = 'hover:bg-gray-900/70';
 	const dayHoverClass = 'hover:bg-neutral-100/70';
 
-	const nightBorderClass = 'border-yellow-300';
+	const nightBorderClass = 'border-gray-500';
 	const dayBorderClass = 'border-neutral-100';
 	useEffect(() => {
 	  // Select the body element
