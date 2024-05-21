@@ -95,7 +95,7 @@ function Homepage(props) {
                     </div>
 
                     {/* Education */}
-                    <div className="w-full px-2 lg:px-0 lg:w-[70%]">
+                    <div className={`w-full px-2 lg:px-0 lg:w-[70%] backdrop-filter backdrop-blur-sm duration-300 `}>
                         <div className={`border ${borderColor} p-8 rounded-xl`}>
                             <div className="flex gap-4">
                                 <FaLandmark className="self-center" />
@@ -105,7 +105,7 @@ function Homepage(props) {
                             {
                                 user_info.education.map((education, index) => {
                                     return (
-                                        <div key={index} className="flex gap-4 mt-8">
+                                        <div key={index} className="flex gap-4 mt-8 ">
                                             <img className="h-10 w-10 rounded-full" src={education.image} />
                                             <div className="w-full">
                                                 <h5 className="font-medium">{education.school}</h5>
@@ -165,10 +165,10 @@ function Homepage(props) {
                         <FaTelegramPlane className="self-center text-lg" />
                         <span>Message on Telegram</span>
                     </a> */}
-                    <label href={user_info.socials.viber} className="flex mt-6 gap-4">
+                    {/* <label href={user_info.socials.viber} className="flex mt-6 gap-4">
                         <FaViber className="self-center text-lg" />
                         <span>{user_info.socials.viber}</span>
-                    </label>
+                    </label> */}
 
                     <a href={user_info.socials.resumeOrCv} className="flex gap-4 hover:text-gray-700 transition-all duration-300 mt-4" download>
                             <FaFileDownload className="self-center text-lg" />
