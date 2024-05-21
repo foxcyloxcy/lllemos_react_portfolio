@@ -19,7 +19,7 @@ function App() {
 	const dayHoverClass = 'hover:bg-neutral-100/70';
 
 	const nightBorderClass = 'border-gray-500';
-	const dayBorderClass = 'border-neutral-100';
+	const dayBorderClass = 'border-yellow-300';
 	useEffect(() => {
 	  // Select the body element
 	  const body = document.body;
