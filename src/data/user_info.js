@@ -35,7 +35,7 @@ const info = {
     projects: [
         {
 			title: "McLaud Technology",
-			description: "McLaud Technology is a company that specializes in various printers, scanners, copiers, fax machines, and other office equipment. I was hired as a shopify web developer to build new features and maintain existing functionalities that allows users to manage their product inventory and customer orders.",
+			description: "McLaud Technology is a company that specializes in various printers, scanners, copiers, fax machines, and other office equipment. I was hired as a shopify developer to build new features and maintain existing functionalities that allows users to manage their product inventory and customer orders.",
 			technologies: "mclaud_tech.png",
 			// github: "https://github.com/dsbalico/letter-digit-shape-classification",
             link: "https://mclaudtechnology.com/"
@@ -43,7 +43,7 @@ const info = {
 
 		{
 			title: "TalentSage",
-			description: "TalentSage is a company that specializes in personality test surveys and reports. I was hired as a part of development team. We built this complex web application from scratch, it allows users to have multiple roles, multiple organizations, create and manage surveys(sample surveys are: Big 5 Personality Test  and 360 Personality Test ) and reports for the respective surveys.",
+			description: "TalentSage is a London based company that specializes in personality test surveys and reports. I was hired as a part of development team. We built this complex web application from scratch, it allows users to have multiple roles, multiple organizations, create and manage surveys(sample surveys are: Big 5 Personality Test  and 360 Personality Test ) and reports for the respective surveys.",
 			technologies: "app_logo2.png",
 			// github: "https://github.com/dsbalico/chatroom",
             link: "https://www.talentsage.com/"
