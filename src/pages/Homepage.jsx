@@ -4,14 +4,10 @@ import { FaSquareXTwitter, FaLinkedin  } from "react-icons/fa6";
 import Project from "../components/Project";
 import { FaLandmark } from "react-icons/fa";
 import user_info from "../data/user_info.js"; 
-import ToggleTheme from "../components/ToggleTheme.jsx";
-import { AppContext } from "../App.jsx";
-import { useContext } from "react";
 import GitHubButton from 'react-github-btn'
 import { IoIosArrowForward } from "react-icons/io";
 
 function Homepage() {
-    const {theme, switchTheme} = useContext(AppContext);
 
     const scrollToTop = () => {
         window.scrollTo({
@@ -68,7 +64,7 @@ function Homepage() {
                         {
                             user_info.projects.map((project, index) => {
                                 return (
-                                    <Project key={index} theme={theme} title={project.title} description={project.description} technologies={project.technologies} github={project.github} link={project.link} />
+                                    <Project key={index} title={project.title} description={project.description} technologies={project.technologies} github={project.github} link={project.link} />
                                 )
                             })
                         }
@@ -82,17 +78,17 @@ function Homepage() {
                         <div className="p-6 hover:bg-gray-200/70 backdrop-filter backdrop-blur-sm transition-all duration-300 md:rounded-xl">
                             <h4 className="text-lg font-medium">Programming Database and Languages</h4>
                             <p className="leading-7 mt-2 text-base font-light">{user_info.skills.languages.description}</p>
-                            <img className="w-48 mt-4" src={user_info.skills.languages.image + theme} />
+                            <img className="w-48 mt-4" src={user_info.skills.languages.image} />
                         </div>
                         <div className="p-6 hover:bg-gray-200/70 backdrop-filter backdrop-blur-sm transition-all duration-300 md:rounded-xl">
                             <h4 className="text-lg font-medium">Frameworks & Libraries</h4>
                             <p className="leading-7 mt-2 text-base font-light ">{user_info.skills.frameworks.description}</p>
-                            <img className="w-48 mt-4" src={user_info.skills.frameworks.image + theme} />
+                            <img className="w-48 mt-4" src={user_info.skills.frameworks.image} />
                         </div>
                         <div className="p-6 hover:bg-gray-200/70 backdrop-filter backdrop-blur-sm transition-all duration-300 md:rounded-xl">
                             <h4 className="text-lg font-medium">Tools & Platforms</h4>
                             <p className="leading-7 mt-2 text-base font-light ">{user_info.skills.tools.description}</p>
-                            <img className="w-48 mt-4" src={user_info.skills.tools.image + theme} />
+                            <img className="w-48 mt-4" src={user_info.skills.tools.image} />
                         </div>
                     </div>
 
@@ -182,7 +178,7 @@ function Homepage() {
                 
                 {/* Footer */}
                 <footer className="p-4 text-center md:flex justify-between">
-                    <GitHubButton className="self-center" href="https://github.com/foxcyloxcy" data-color-scheme={theme} data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star foxcyloxcy/lllemos-react-portfolio on GitHub">Star on Github</GitHubButton>
+                    <GitHubButton className="self-center" href="https://github.com/foxcyloxcy" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star foxcyloxcy/lllemos-react-portfolio on GitHub">Star on Github</GitHubButton>
                     <p className=" self-center mt-2 md:mt-0 text-sm text-center font-light">{user_info.footer}</p>
                     <button onClick={() => scrollToTop()} className="self-center mt-2 md:mt-0 mx-auto md:mx-0 text-sm font-light flex gap-2"><FaArrowCircleUp className="self-center" /> Go back to top</button>
                 </footer>
