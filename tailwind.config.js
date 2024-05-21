@@ -18,7 +18,7 @@ export default {
   safelist: [
     'bg-slate-800',
     'bg-sky-300',
-    'text-yellow-600',
+    'text-yellow-300',
     'text-orange-700',
   ]
 }

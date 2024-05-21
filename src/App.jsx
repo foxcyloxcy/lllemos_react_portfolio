@@ -20,14 +20,14 @@ function App() {
 	  // Update the class based on whether it's night time
 	  if (isNight) {
 		body.classList.add('bg-slate-800');
-		body.classList.add('text-yellow-600');
+		body.classList.add('text-yellow-300');
 		body.classList.remove('bg-sky-300');
 		body.classList.remove('text-orange-700');
 	  } else {
 		body.classList.add('bg-sky-300');
 		body.classList.add('text-orange-700');
 		body.classList.remove('bg-slate-800');
-		body.classList.remove('text-yellow-600');
+		body.classList.remove('text-yellow-300');
   
 	  }
 	}, [isNight]);
