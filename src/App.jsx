@@ -100,7 +100,7 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Homepage />} />
-					<Route path="*" element={<NotFound />} />
+					<Route path="/404" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>
 		</AppContext.Provider>
