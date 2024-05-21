@@ -23,7 +23,7 @@
   margin-left: -100px;
   border-radius: 50%;
   box-shadow: 0 0 84px orange;
-  z-index: 1;
+  z-index: -1;
 }
 
 #moon {
