@@ -9,7 +9,8 @@ import { IoIosArrowForward } from "react-icons/io";
 
 function Homepage(props) {
     const hoverBgColor = props.hoverClass
-    console.log("props.hoverClass", props.hoverClass)
+    const borderColor = props.borderClass
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -59,13 +60,13 @@ function Homepage(props) {
                 </div>
 
                 {/* Projects */}
-                <div className="border border-solid border dark:border-gray-500 p-4 rounded-xl">
+                <div className={`border border-solid border p-4 rounded-xl`}>
                     <h1>Previous projects:</h1>
                     <div id="projects" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 md:px-16">
                         {
                             user_info.projects.map((project, index) => {
                                 return (
-                                    <Project key={index} title={project.title} description={project.description} technologies={project.technologies} github={project.github} link={project.link} />
+                                    <Project hoverBgColor={hoverBgColor} key={index} title={project.title} description={project.description} technologies={project.technologies} github={project.github} link={project.link} />
                                 )
                             })
                         }
@@ -95,7 +96,7 @@ function Homepage(props) {
 
                     {/* Education */}
                     <div className="w-full px-2 lg:px-0 lg:w-[70%]">
-                        <div className="border dark:border-gray-500 p-8 rounded-xl">
+                        <div className="border p-8 rounded-xl">
                             <div className="flex gap-4">
                                 <FaLandmark className="self-center" />
                                 <h4 className="self-center">Education</h4>
@@ -153,7 +154,7 @@ function Homepage(props) {
                         </a>
                     </div>
 
-                    <hr className="mt-6 w-72 border border-gray-300 dark:border-gray-700" />
+                    <hr className={`mt-6 w-72 border ${borderColor}`} />
 
                     <a href={`mailto:${user_info.main.email}`} className="flex mt-6 gap-4 hover:text-gray-700 transition-all duration-30">
                         <MdEmail className="self-center text-lg" />
@@ -175,7 +176,7 @@ function Homepage(props) {
                         </a>
                 </div>
 
-                <hr className="mt-12 border border-gray-300 dark:border-gray-700" />
+                <hr className={`mt-12 border ${borderColor}`} />
                 
                 {/* Footer */}
                 <footer className="p-4 text-center md:flex justify-between">
