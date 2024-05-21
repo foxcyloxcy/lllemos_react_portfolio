@@ -1,26 +1,11 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import Homepage from './pages/Homepage'
-import NotFound from './pages/404'
 import { useEffect, useState } from 'react';
-import { createContext } from 'react';
 import Sun from './components/SunComponent/Sun.jsx';
 import Moon from './components/MoonComponent/Moon.jsx';
 
-export const AppContext = createContext();
 
 function App() {
-	const savedTheme = localStorage.getItem("theme");
-    const [theme, setTheme] = useState(savedTheme || "dark");
-
-	useEffect(() => {
-        document.documentElement.classList.toggle("dark", theme === "dark");
-
-        localStorage.setItem("theme", theme);
-    }, [theme]);
-
-	const switchTheme = () => {
-        setTheme(theme === "dark" ? "light" : "dark");
-    };
 
 	const [sunPosition, setSunPosition] = useState({ x: 0, y: 0 });
 	const [moonPosition, setMoonPosition] = useState({ x: 0, y: 0 });
@@ -96,14 +81,8 @@ function App() {
 		<div className="app-container">
 		{!hideSun && <Sun position={sunPosition} />}
 		{!hideMoon && <Moon position={moonPosition} />}
-		<AppContext.Provider value={{ theme, switchTheme }}>
-			<BrowserRouter>
-				<Routes>
-					<Route path="/" element={<Homepage />} />
-					<Route path="/404" element={<NotFound />} />
-				</Routes>
-			</BrowserRouter>
-		</AppContext.Provider>
+					<Homepage />
+					{/* <Route path="/404" element={<NotFound />} /> */}
 		</div>
 		</>
 
