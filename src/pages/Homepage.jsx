@@ -60,7 +60,7 @@ function Homepage(props) {
                 </div>
 
                 {/* Projects */}
-                <div id="projects" className={`border border-solid border p-4 rounded-xl`}>
+                <div id="projects" className={`border ${borderColor} p-4 rounded-xl`}>
                     <h1>Previous projects:</h1>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 md:px-16">
                         {
@@ -96,7 +96,7 @@ function Homepage(props) {
 
                     {/* Education */}
                     <div className="w-full px-2 lg:px-0 lg:w-[70%]">
-                        <div className="border p-8 rounded-xl">
+                        <div className={`border ${borderColor} p-8 rounded-xl`}>
                             <div className="flex gap-4">
                                 <FaLandmark className="self-center" />
                                 <h4 className="self-center">Education</h4>
