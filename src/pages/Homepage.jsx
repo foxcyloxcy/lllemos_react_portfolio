@@ -7,8 +7,9 @@ import user_info from "../data/user_info.js";
 import GitHubButton from 'react-github-btn'
 import { IoIosArrowForward } from "react-icons/io";
 
-function Homepage() {
-
+function Homepage(props) {
+    const hoverBgColor = props.hoverClass
+    console.log("props.hoverClass", props.hoverClass)
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -33,8 +34,8 @@ function Homepage() {
                                 <p className="mt-6 text-base font-light lg:w-[87%] leading-7">{user_info.main.description}</p>
 
                                 <div className="flex gap-2 mt-6">
-                                    <a href="#projects" className="px-6 py-3 transition-all hover:bg-gray-200/70 backdrop-filter backdrop-blur-sm duration-300 flex gap-3 hover:gap-4">Projects</a>
-                                    <a href="#contact" className="px-6 py-3 transition-all hover:bg-gray-200/70 backdrop-filter backdrop-blur-sm duration-300 flex gap-3 hover:gap-4">
+                                    <a href="#projects" className={`px-6 py-3 transition-all ${hoverBgColor} backdrop-filter backdrop-blur-sm duration-300 flex gap-3 hover:gap-4`}>Projects</a>
+                                    <a href="#contact" className={`px-6 py-3 transition-all ${hoverBgColor} backdrop-filter backdrop-blur-sm duration-300 flex gap-3 hover:gap-4`}>
                                         <span className="self-center">Contact</span>
                                         <IoIosArrowForward className="self-center" />
                                     </a>
@@ -75,17 +76,17 @@ function Homepage() {
                 <div className="flex flex-wrap lg:flex-nowrap justify-between gap-12 mt-20 md:px-16">
                     {/* Skills */}
                     <div>
-                        <div className="p-6 hover:bg-gray-200/70 backdrop-filter backdrop-blur-sm transition-all duration-300 md:rounded-xl">
+                        <div className={`p-6 ${hoverBgColor} backdrop-filter backdrop-blur-sm transition-all duration-300 md:rounded-xl`}>
                             <h4 className="text-lg font-medium">Programming Database and Languages</h4>
                             <p className="leading-7 mt-2 text-base font-light">{user_info.skills.languages.description}</p>
                             <img className="w-48 mt-4" src={user_info.skills.languages.image} />
                         </div>
-                        <div className="p-6 hover:bg-gray-200/70 backdrop-filter backdrop-blur-sm transition-all duration-300 md:rounded-xl">
+                        <div className={`p-6 ${hoverBgColor} backdrop-filter backdrop-blur-sm transition-all duration-300 md:rounded-xl`}>
                             <h4 className="text-lg font-medium">Frameworks & Libraries</h4>
                             <p className="leading-7 mt-2 text-base font-light ">{user_info.skills.frameworks.description}</p>
                             <img className="w-48 mt-4" src={user_info.skills.frameworks.image} />
                         </div>
-                        <div className="p-6 hover:bg-gray-200/70 backdrop-filter backdrop-blur-sm transition-all duration-300 md:rounded-xl">
+                        <div className={`p-6 ${hoverBgColor} backdrop-filter backdrop-blur-sm transition-all duration-300 md:rounded-xl`}>
                             <h4 className="text-lg font-medium">Tools & Platforms</h4>
                             <p className="leading-7 mt-2 text-base font-light ">{user_info.skills.tools.description}</p>
                             <img className="w-48 mt-4" src={user_info.skills.tools.image} />

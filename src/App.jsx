@@ -12,7 +12,10 @@ function App() {
 	const [hideSun, setHideSun] = useState(false);
 	const [hideMoon, setHideMoon] = useState(false);
 	const [isNight, setIsNight] = useState(false);
+	const [hoverClass, setHoverClass] = useState("");
   
+	const nightHoverClass = 'hover:bg-gray-700/70';
+	const dayHoverClass = 'bg-neutral-100/50';
 	useEffect(() => {
 	  // Select the body element
 	  const body = document.body;
@@ -23,12 +26,13 @@ function App() {
 		body.classList.add('text-yellow-300');
 		body.classList.remove('bg-sky-300');
 		body.classList.remove('text-orange-700');
+		setHoverClass(nightHoverClass);
 	  } else {
 		body.classList.add('bg-sky-300');
 		body.classList.add('text-orange-700');
 		body.classList.remove('bg-slate-800');
 		body.classList.remove('text-yellow-300');
-  
+		setHoverClass(dayHoverClass);
 	  }
 	}, [isNight]);
   
@@ -81,7 +85,7 @@ function App() {
 		<div className="app-container">
 		{!hideSun && <Sun position={sunPosition} />}
 		{!hideMoon && <Moon position={moonPosition} />}
-					<Homepage />
+					<Homepage hoverClass={hoverClass} />
 					{/* <Route path="/404" element={<NotFound />} /> */}
 		</div>
 		</>
