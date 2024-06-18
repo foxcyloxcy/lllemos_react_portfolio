@@ -49,13 +49,13 @@ const info = {
             link: "https://www.talentsage.com/"
 		},
 
-		// {
-		// 	title: "Sudoku Solver",
-		// 	description: "Sudoku Solver is a web application that can generate or solve sudoku problems using simulated annealing, an optimization algorithm.",
-		// 	technologies: "https://skillicons.dev/icons?i=react,tailwindcss,ts,0,0&perline=5&theme=",
-		// 	github: "https://github.com/dsbalico/sudoku-solver-using-simulated-annealing",
-        //     link: "https://sudoku-solver-sa.netlify.app/"
-		// },
+		{
+			title: "Call Recording with User Management",
+			description: "This application can search records in database using multiple input filters then displays table and can play audio recordings using symlinks and also showcases CRUD functionality in User Management component.",
+			technologies: "call-recording.png",
+			github: "https://github.com/foxcyloxcy/call-recording",
+            link: "https://foxcyloxcy.github.io/call-recording/"
+		},
 
 		// {
 		// 	title: "Probability Pick",
