@@ -50,7 +50,7 @@ const info = {
 		},
 
 		{
-			title: "Audio Recording with User Management",
+			title: "Play Audio Recording with User Management",
 			description: "This application can search records in database using multiple input filters then displays table and can play audio recordings using symlinks and also showcases CRUD functionality in User Management component.",
 			technologies: "call-recording.png",
 			github: "https://github.com/foxcyloxcy/audio-recording",
