@@ -43,7 +43,7 @@ const info = {
 
 		{
 			title: "TalentSage",
-			description: "TalentSage is a London based company that specializes in personality test surveys and reports. I was hired as a part of development team. We built this complex web application from scratch, it allows users to have multiple roles, multiple organizations, create and manage surveys(sample surveys are: Big 5 Personality Test  and 360 Personality Test ) and reports for the respective surveys.",
+			description: "TalentSage is a company that specializes in personality test surveys and reports. I was hired as a part of development team. We built this complex web application from scratch, it allows users to have multiple roles, multiple organizations, create and manage surveys(sample surveys are: Big 5 Personality Test  and 360 Personality Test ) and reports for the respective surveys.",
 			technologies: "app_logo2.png",
 			// github: "https://github.com/dsbalico/chatroom",
             link: "https://www.talentsage.com/"
