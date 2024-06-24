@@ -19,16 +19,16 @@ const info = {
 
     skills: {
         languages: {
-            description: "I possess proficient expertise in a diverse range of programming languages, including C++, TypeScript, PHP, JavaScript, MongoDB and MySQL.",
-            image: "https://skillicons.dev/icons?i=cpp,typescript,php,javascript,mongodb,mysql&perline=6&theme="
+            description: "I possess proficient expertise in a diverse range of programming languages, including HTML, CSS, C++, TypeScript, PHP, JavaScript, MongoDB and MySQL.",
+            image: "https://skillicons.dev/icons?i=html,css,cpp,typescript,php,javascript,mongodb,mysql&perline=8&theme="
         },
         frameworks: {
             description: "Experienced in a versatile tech stack, including React.js, Next.js, Express.js, Node.js, Tailwind CSS, Vue.js and Vuetify",
             image: "https://skillicons.dev/icons?i=react,next,express,nodejs,tailwind,vue,vuetify&perline=7&theme="
         },
         tools: {
-            description: "I am well-versed in utilizing various tools and platforms to enhance the development process, including Git, Github, Gitlab, StackOverflow, Heroku and Postman.",
-            image: "https://skillicons.dev/icons?i=git,github,gitlab,stackoverflow,heroku,postman&perline=6&theme="
+            description: "I am well-versed in utilizing various tools and platforms to enhance the development process, including Git, Github, Gitlab, StackOverflow, Heroku, Postman and AWS.",
+            image: "https://skillicons.dev/icons?i=git,github,gitlab,stackoverflow,heroku,postman,aws&perline=7&theme="
         },
     },
 
