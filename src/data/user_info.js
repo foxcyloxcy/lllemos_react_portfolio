@@ -57,7 +57,15 @@ const info = {
             link: "https://foxcyloxcy.github.io/audio-recording/"
 		},
 
-		// {
+		{
+			title: "To-do List",
+			description: "Probability Pick is a PCSO Lotto Number Generator that calculates the likelihood of selecting winning numbers based on historical draw data.",
+			technologies: "to-do.png",
+			github: "https://github.com/foxcyloxcy/Sticky-Notes",
+            link: "https://foxcyloxcy.github.io/Sticky-Notes/"
+		},
+
+        // {
 		// 	title: "Probability Pick",
 		// 	description: "Probability Pick is a PCSO Lotto Number Generator that calculates the likelihood of selecting winning numbers based on historical draw data.",
 		// 	technologies: "https://skillicons.dev/icons?i=react,tailwindcss,flask,0,0&perline=5&theme=",
