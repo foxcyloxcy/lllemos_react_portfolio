@@ -59,7 +59,7 @@ const info = {
 
 		{
 			title: "To-do List",
-			description: "Probability Pick is a PCSO Lotto Number Generator that calculates the likelihood of selecting winning numbers based on historical draw data.",
+			description: "This to-do list is for you to list action items you will actually do. You can cross out the action item after you are done, or you can delete it if you don't need it in your list anymore.",
 			technologies: "to-do.png",
 			github: "https://github.com/foxcyloxcy/Sticky-Notes",
             link: "https://foxcyloxcy.github.io/Sticky-Notes/"
