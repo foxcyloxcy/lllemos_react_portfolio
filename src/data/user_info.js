@@ -53,7 +53,7 @@ const info = {
 			title: "Play Audio Recording with User Management",
 			description: "This application can search records in database using multiple input filters then displays table and can play audio recordings using symlinks and also showcases CRUD functionality in User Management component.",
 			technologies: "call-recording.png",
-			github: "https://github.com/foxcyloxcy/audio-recording",
+			// github: "https://github.com/foxcyloxcy/audio-recording",
             link: "https://foxcyloxcy.github.io/audio-recording/"
 		},
 
@@ -61,7 +61,7 @@ const info = {
 			title: "To-do List",
 			description: "This to-do list is for you to list action items you will actually do. You can cross out the action item after you are done, or you can delete it if you don't need it in your list anymore.",
 			technologies: "to-do.png",
-			github: "https://github.com/foxcyloxcy/Sticky-Notes",
+			// github: "https://github.com/foxcyloxcy/Sticky-Notes",
             link: "https://foxcyloxcy.github.io/Sticky-Notes/"
 		},
 
