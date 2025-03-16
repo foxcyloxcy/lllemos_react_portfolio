@@ -14,7 +14,7 @@ const info = {
 		facebook: "https://www.facebook.com/lucky.llemos.1",
         // viber: "+63917-162-6566",
         stackOverFlow: "https://stackoverflow.com/users/14865943/foxcyloxcy",
-        resumeOrCv: "lllemos_2024-05-21.pdf",
+        resumeOrCv: "lllemos_resume.pdf",
     },
 
     skills: {
