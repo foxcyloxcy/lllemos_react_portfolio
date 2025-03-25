@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Heebo", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+
+#sun {
+  /* Positions the top-left corner of the image to be *
+    /* in the middle of the box */
+  height: 200px;
+  width: 200px;
+  background-color: #fae20a;
+  margin-top: -100px;
+  margin-left: -100px;
+  border-radius: 50%;
+  box-shadow: 0 0 84px orange;
+  z-index: -1;
+}
+
+#moon {
+  margin-top: -6px;
+  margin-left: -6px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.app-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.homepage-container{
+  z-index: 2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4577af;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: #acb7e1;
+}
+
+/* Clouds.css */
+.clouds-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -1; /* Ensure clouds are behind other content */
+}
+
+.cloud {
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+  animation: moveClouds linear infinite;
+}
+
+.cloud::before,
+.cloud::after {
+  content: '';
+  position: absolute;
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.cloud::before {
+  top: -20px;
+  left: 10px;
+}
+
+.cloud::after {
+  top: -10px;
+  right: 10px;
+}
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+
+/* Stars.css */
+.stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -1; /* Ensure stars are behind other content */
+}
+
+.star {
+  position: absolute;
+  background: rgb(254 240 138);
+  border-radius: 50%;
+  opacity: 0;
+  animation: blink 2s infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
