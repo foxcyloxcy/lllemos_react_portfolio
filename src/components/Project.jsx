@@ -19,12 +19,12 @@ function Project(props) {
                     <a href={props.link} className="text-xs self-center">View Project</a>
                 </div>
             )}
-            {props.github && (
+            {/* {props.github && (
                 <div className="flex gap-2 mt-4 hover:text-blue-600 cursor-pointer transition-all duration-300">
                     <CiLink className="text-2xl self-center" />
                     <a href={props.github} className="text-xs self-center">View Github</a>
                 </div>
-            )}
+            )} */}
         </div>
     </div>
   )
