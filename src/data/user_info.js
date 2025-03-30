@@ -65,13 +65,13 @@ const info = {
             link: "https://foxcyloxcy.github.io/Sticky-Notes/"
 		},
 
-        // {
-		// 	title: "Probability Pick",
-		// 	description: "Probability Pick is a PCSO Lotto Number Generator that calculates the likelihood of selecting winning numbers based on historical draw data.",
-		// 	technologies: "https://skillicons.dev/icons?i=react,tailwindcss,flask,0,0&perline=5&theme=",
-		// 	github: "https://github.com/dsbalico/pcso-lotto-number-generator",
-        //     link: "https://probability-pick.netlify.app/"
-		// },
+        {
+			title: "The Reloved Marketplace",
+			description: "The business is a peer-to-peer marketplace for buying and selling secondhand items in the United Arab Emirates. It has a user-friendly website and a feature that allows users to create and manage their own virtual storefronts.",
+			technologies: "reloved.png",
+			// github: "https://github.com/dsbalico/pcso-lotto-number-generator",
+            link: "https://www.therelovedmarketplace.com/"
+		},
     ],
 
     education: [
